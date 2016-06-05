@@ -1,0 +1,10 @@
+div {
+	display: block;
+	text-align: center;
+	padding: 1em;
+}
+
+.text-box {
+	width: 3em;
+	border: solid .1em blue;
+}
