@@ -1,10 +1,23 @@
 $(".enter").click(function() {
-	var numberInTen = $(".text-box").val();
     $(".output").empty();
-    while (numberInTen < 10) {
-      		$(".output").append("<div>"+numberInTen+"</div>");
-      		numberInTen++;
-    	}
+  
+	var y = $(".text-box").val();
+    var x = 1;
+    while (x <= y) {
+      if ((x % 3 === 0) & (x % 5 == 0)){
+        $(".output").append("<div>"+"fizz buzz"+"</div>");
+      }
+      else if (x % 3 === 0) {
+         $(".output").append("<div>"+"fizz"+"</div>");
+      }
+      else if (x % 5 === 0){
+        $(".output").append("<div>"+"buzz"+"</div>");
+      }
+      else {
+      	$(".output").append("<div>"+x+"</div>");
+      }
+      x++;
+    }
 	$(".text-box").val("");
 	console.log("check");
 	});

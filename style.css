@@ -1,6 +1,11 @@
-div {
+div, p {
 	display: block;
 	text-align: center;
+	width: 25em;
+	margin: 0 auto;
+}
+p {
+	padding: 2em;
 }
 #instructions {
 padding: 2em;
