@@ -7,4 +7,5 @@ div {
 .text-box {
 	width: 3em;
 	border: solid .1em blue;
+	text-align: center;
 }
